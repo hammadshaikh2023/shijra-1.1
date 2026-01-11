@@ -1,0 +1,7 @@
+{
+  "name": "Shijra 1.1",
+  "description": "Build your family's Shijra digitally. Preserve oral history, generate beautiful prints, and pass down your legacy.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shijra | Digital Family Sanctuary</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              navy: {
+                800: '#1e293b',
+                900: '#0f172a',
+                950: '#020617',
+              },
+              emerald: {
+                400: '#34d399',
+                500: '#10b981',
+                600: '#059669',
+              },
+              gold: {
+                400: '#fbbf24',
+                500: '#f59e0b',
+              },
+            },
+            animation: {
+              'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              pulseGlow: {
+                '0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+                '50%': { opacity: '0.6', transform: 'scale(1.05)' }
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+      body { 
+        background-color: #020617; 
+        color: #e2e8f0; 
+        margin: 0; 
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      #root { min-height: 100vh; }
+      .dreamy-glass {
+        background: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+    </style>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@0.2.1",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react,react-dom",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom",
+    "d3": "https://esm.sh/d3@7.9.0",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "socket.io-client": "https://esm.sh/socket.io-client@4.8.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-native": "https://esm.sh/react-native@^0.83.1",
+    "expo-status-bar": "https://esm.sh/expo-status-bar@^3.0.9",
+    "@react-navigation/native": "https://esm.sh/@react-navigation/native@^7.1.26",
+    "@react-navigation/bottom-tabs": "https://esm.sh/@react-navigation/bottom-tabs@^7.9.0",
+    "@react-navigation/native-stack": "https://esm.sh/@react-navigation/native-stack@^7.9.0",
+    "react-native-safe-area-context": "https://esm.sh/react-native-safe-area-context@^5.6.2",
+    "expo-font": "https://esm.sh/expo-font@^14.0.10",
+    "expo-linear-gradient": "https://esm.sh/expo-linear-gradient@^15.0.8",
+    "react-native-reanimated": "https://esm.sh/react-native-reanimated@^4.2.1",
+    "@expo/vector-icons": "https://esm.sh/@expo/vector-icons@^15.0.3",
+    "expo-blur": "https://esm.sh/expo-blur@^15.0.8",
+    "expo-local-authentication": "https://esm.sh/expo-local-authentication@^17.0.8",
+    "express": "https://esm.sh/express@^5.2.1",
+    "multer": "https://esm.sh/multer@^2.0.2",
+    "@aws-sdk/client-s3": "https://esm.sh/@aws-sdk/client-s3@^3.965.0",
+    "crypto": "https://esm.sh/crypto@^1.0.1",
+    "path": "https://esm.sh/path@^0.12.7",
+    "buffer": "https://esm.sh/buffer@^6.0.3",
+    "pg": "https://esm.sh/pg@^8.16.3",
+    "joi": "https://esm.sh/joi@^18.0.2",
+    "socket.io": "https://esm.sh/socket.io@^4.8.3",
+    "http": "https://esm.sh/http@^0.0.1-security",
+    "electron": "https://esm.sh/electron@^39.2.7",
+    "fs": "https://esm.sh/fs@^0.0.1-security",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
